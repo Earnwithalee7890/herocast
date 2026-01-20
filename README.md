@@ -17,7 +17,7 @@ Social media in 2025 extracts attention and sells it. herocast is built for a di
 ## Features
 
 - **Multi-account management** — Switch between Farcaster accounts seamlessly
-- **Scheduled posts** — Queue content and publish on your schedule
+- **Scheduled posts** — Queue content and publish on your schedule via the new Scheduler Dashboard
 - **Analytics** — Track engagement without invasive tracking
 - **Desktop + Web** — Native apps for macOS, Windows, Linux, plus web access
 - **Keyboard-first** — Power user shortcuts throughout
