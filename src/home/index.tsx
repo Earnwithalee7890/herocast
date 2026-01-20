@@ -10,6 +10,7 @@ import {
   UserGroupIcon,
   ChatBubbleLeftRightIcon,
   XMarkIcon,
+  CalendarDaysIcon,
 } from '@heroicons/react/24/solid';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -232,6 +233,11 @@ const Home = ({ children }: { children: React.ReactNode }) => {
           shortcut: 'Shift + L',
         },
         {
+          name: 'Scheduler',
+          router: '/scheduler',
+          icon: <CalendarDaysIcon className="h-6 w-6 shrink-0" aria-hidden="true" />,
+        },
+        {
           name: 'Search',
           router: '/search',
           icon: <MagnifyingGlassIcon className="h-6 w-6 shrink-0" aria-hidden="true" />,
@@ -308,6 +314,8 @@ const Home = ({ children }: { children: React.ReactNode }) => {
         return RIGHT_SIDEBAR_ENUM.CAST_INFO;
       case '/search':
         return RIGHT_SIDEBAR_ENUM.SEARCH;
+      case '/scheduler':
+        return RIGHT_SIDEBAR_ENUM.NONE;
       default:
         return RIGHT_SIDEBAR_ENUM.NONE;
     }
